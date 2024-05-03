@@ -1,5 +1,4 @@
-# Project Name
-rumbo-al-altar-front
+# Rumbo al altar Frontend
 
 ## Description
 

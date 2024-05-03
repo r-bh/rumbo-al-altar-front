@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root {
+  --dark-gray: #212529;
+  --light-gray: #ced4da;
+  --beige: #f5f2e8;
+  --pale-beige: #f9f9f9;
+  --success-color-light: #d4edda;
+  --success-color-dark: #1e7e34;
+  --danger-color-dark: #8b0000;
+  --danger-color-light: #ffc4c4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: var(--dark-gray);
+  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 200;
+}
+
+.page-wrapper {
+  margin: 4em;
+  background-image: url(./assets/panel-background.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.card, input, textarea {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+.link {
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.shadow {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--beige);
+  border: 1px solid #e0e0e0;
+  padding: 3rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  max-width: 20em;
+}
+
+.card .wider {
+  max-width: 30em;
+}
+
+.container {
+  width: calc(100% - 10em);
+  padding-bottom: 2em;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid var(--light-gray);
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.error-box {
+  background-color: var(--danger-color-light);
+  color: var(--danger-color-dark);
+  border: 1px solid var(--danger-color-dark);
+  border-radius: 3px;
+}
+
+.success-box {
+  background-color: var(--success-color-light);
+  color: var(--success-color-dark);
+  border: 1px solid var(--success-color-dark);
+  border-radius: 3px;
+}
+
+.remove-btn {
+  background-color: var(--danger-color-dark);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.m-0 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    background-image: url(./assets/panel-background.png);
+    color: var(--dark-gray);
+    border: 1px solid #adb5bd;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: var(--beige);
+  }
+
+.low-opacity {
+  opacity: 0.6;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--beige);
+  height: 3.5rem;
+  margin: 10px;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--dark-gray);
+  text-decoration: none;
+  padding: 10px;
+  transition: font-size 0.3s ease;
+}
+
+.active > .nav-link {
+  font-weight: 400 !important;
+}
+
+.nav-link:hover {
+  font-size: 1.1em;
+  font-weight: 400px;
+}
+
+/* FOTO UPLOADER */
+
+.image-container {
+  width: 100%;
+  margin: 2em 0;
+  min-height: 25em;
+  max-width: 40em;
+  border: 1px solid var(--light-gray);
+}
+
+.floating-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 30;
+}
+
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+}
+
+.custom-file-upload img {
+  cursor: pointer !important;
+}
+
+.custom-file-upload img:hover {
+  cursor: pointer !important;
+  transform: scale(1.1); /* Aumentar el tamaño en un 10% */
+}
+
+/* TABLE */
+.custom-table {
+  margin: 3em 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+.custom-table th {
+  background-color: var(--beige);
+}
+
+.custom-table td {
+  background-color: var(--pale-beige);
+  font-size: 0.9em;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-image: url(./assets/panel-background.png);
+  padding: 3em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  border-color: var(--success-color-dark);
+  background-color: var(--success-color-light);
+  color: var(--success-color-dark);
+}
+
+.modal-buttons button:last-child {
+  border-color: var(--danger-color-dark);
+  background-color: var(--danger-color-light);
+  color: var(--danger-color-dark);
+}

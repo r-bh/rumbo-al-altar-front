@@ -358,3 +358,12 @@ input[type="file"] {
   background-color: var(--danger-color-light);
   color: var(--danger-color-dark);
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 2em);
+  }
+  .page-wrapper {
+    margin: 1em;
+  }
+}

@@ -21,7 +21,7 @@ const Attendees = () => {
     if (!loginData) {
       navigate('/login');
     } else {
-      axios.get(`${apiUrl}/attendees`)
+      axios.get(`${apiUrl}/attendees/${loginData.weddingId}`)
         .then((res) => {
           setAttendees(res.data);
         }).catch((err) => {

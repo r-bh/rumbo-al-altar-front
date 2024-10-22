@@ -32,6 +32,10 @@ h1, h2 {
   background-position: center;
 }
 
+.leaves-image {
+  max-width: calc(100% - 5em);
+}
+
 .card, input, textarea {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
@@ -56,6 +60,13 @@ h1, h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.text-truncate {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 .d-block {
@@ -148,7 +159,6 @@ h1, h2 {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 
 .m-0 {
   margin: 0;
@@ -299,6 +309,8 @@ input[type="file"] {
   margin: 3em 0;
   border-collapse: collapse;
   width: 100%;
+  overflow-x: auto;
+  display: block;
 }
 
 .custom-table th, .custom-table td {
@@ -313,6 +325,13 @@ input[type="file"] {
 .custom-table td {
   background-color: var(--pale-beige);
   font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-table th, .custom-table td {
+    padding: 0.3em;
+    font-size: 0.8em;
+  }
 }
 
 /* MODAL */

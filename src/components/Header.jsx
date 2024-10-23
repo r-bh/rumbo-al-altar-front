@@ -57,7 +57,7 @@ function Header() {
   return (
     <div className="w-100 d-flex-center flex-column">
       {loginData && <button type="button" className="btn floating-button" onClick={logOut}>Salir</button>}
-      <img className="top-image" src={greenLeaves} alt="imagen de cabecera" />
+      <img className="leaves-image" src={greenLeaves} alt="imagen de cabecera" />
       <h1 className="text-truncate text-center p-2">
         {headerTitle}
       </h1>

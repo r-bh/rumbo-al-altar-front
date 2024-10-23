@@ -308,7 +308,6 @@ input[type="file"] {
 .custom-table {
   margin: 3em 0;
   border-collapse: collapse;
-  width: 100%;
   overflow-x: auto;
   display: block;
 }
@@ -328,6 +327,10 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 768px) {
+  .custom-table {
+    width: 100%;
+  }
+
   .custom-table th, .custom-table td {
     padding: 0.3em;
     font-size: 0.8em;
